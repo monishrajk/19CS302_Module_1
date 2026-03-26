@@ -1,37 +1,35 @@
-# EX 3 C program to find principle amount based on simple interest, time & rate of interest.
+# EX 2 C Write a C program to read a value and check whether that number is less than 100 or not. using  if-else
+
 ## DATE:
 ## AIM:
-To write a C program to  find principle amount based on simple interest, time & rate of interest.
+To write a program to check whether number is less than 100 or not. using  if-else
 
 ## Algorithm
 
 1. Start the program.
-2. Declare floating-point variables `si`, `year`, `rate`, and `principle`.
-3. Read the values of `si`, `year`, and `rate` using `scanf()`.
-4. Calculate the principal amount using the formula `principle = (si * 100) / (year * rate)`.
-5. Display the principal amount using `printf()` and stop the program.
-   
+2. Declare an integer variable `a`.
+3. Read the value of `a` using `scanf()`.
+4. Check the condition `a < 100` using the **if–else** statement and display the corresponding message.
+5. Stop the program.
 
 ## Program:
 ```
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    float si, year, rate,principle;
-     
-      scanf("%f", &si);
-      scanf("%f", &year);
-      scanf("%f",&rate);
-principle =(si *100)/(year*rate);
-   printf("Principle amount is = %.2f", principle);
-    return 0;
-}
-
-
+    int a;
+    scanf("%d",&a);
+        if(a<100)
+        printf("Number is less than 100");
+        else
+        printf("Number is NOT less than 100");
+        return 0;
+    }
+    
 ```
 
 ## Output:
-<img width="816" height="178" alt="Screenshot 2026-03-18 213330" src="https://github.com/user-attachments/assets/ee06fd62-b34d-4fbb-8209-8ddae2457847" />
+<img width="818" height="219" alt="Screenshot 2026-03-18 212545" src="https://github.com/user-attachments/assets/e8d68776-aae2-4f1c-a4bc-cb31121419a3" />
 
 
 
